@@ -1,0 +1,1 @@
+# fmvs_inspector/detectors/__init__.py

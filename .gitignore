@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local config overrides (keep secrets/paths out of git)
+fmvs_inspector/inspection/config_local.py
+
+# Runtime outputs
+logs/
+images/
+outputs/
+debug_out/
+
+# Large / non-source assets (keep repo lightweight)
+FMVS_video/
+dl_models/
+*.pt
+*.pth

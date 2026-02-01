@@ -1,0 +1,42 @@
+# fmvs_inspector/inspection/config_local.py.template
+"""
+Local configuration template.
+
+SETUP INSTRUCTIONS:
+1. Copy this file to: config_local.py
+   (config_local.py is gitignored and won't be tracked)
+   
+2. Edit the paths below to match your local setup
+
+3. Run inspection:
+   python -m fmvs_inspector
+"""
+from __future__ import annotations
+
+from dataclasses import replace
+from fmvs_inspector.inspection.config import DEFAULT_CONFIG as BASE
+
+# Example local configuration - customize these paths
+DEFAULT_CONFIG = replace(
+    BASE,
+    # VIDEO AND OUTPUT PATHS
+    video_path=r"C:/path/to/your/video.mp4",  # Your video file
+    log_dir=r"C:/path/to/logs",               # Where to save detection logs
+    img_dir=r"C:/path/to/images",             # Where to save detection images
+    
+    # DETECTION MODE
+    mode="dl",  # "dl" for deep learning, "opencv" for traditional CV
+    
+    # OPTIONAL: Time window (in seconds)
+    # start_sec=0,
+    # end_sec=None,  # None for full video
+    
+    # OPTIONAL: Adjust DL detection threshold
+    # dl=replace(
+    #     BASE.dl,
+    #     model=replace(BASE.dl.model, mask_thr=0.40),  # Lower = more sensitive
+    # ),
+    
+    # OPTIONAL: Debug visualization
+    # debug=replace(BASE.debug, show_debug=True),
+)

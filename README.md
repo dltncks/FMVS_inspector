@@ -280,9 +280,3 @@ pip install -r requirements-torch-cu121.txt
 - Lower `mask_thr` in DL config (e.g., 0.3 instead of 0.45)
 - Check ROI includes crack regions
 - Try OpenCV mode for comparison
-
-## Contact
-
-For questions or issues:
-- Open an issue on GitHub
-- Email: your.email@example.com

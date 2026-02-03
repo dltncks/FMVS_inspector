@@ -281,30 +281,6 @@ pip install -r requirements-torch-cu121.txt
 - Check ROI includes crack regions
 - Try OpenCV mode for comparison
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```
-@software{fmvs_inspector_2026,
-  author = {Your Name},
-  title = {FMVS Inspector: Deep Learning Crack Detection},
-  year = {2026},
-  url = {https://github.com/yourusername/fmvs_inspector}
-}
-```
-
-## License
-
-[Specify your license here - e.g., MIT, Apache 2.0, etc.]
-
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
 ## Contact
 
 For questions or issues:
